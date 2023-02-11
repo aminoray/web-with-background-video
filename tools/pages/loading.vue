@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <!-- ここからloading画面のコンポーネント群 -->
     <LoadingSimple
       :loading-flag="selectedLoadingPage === 'LoadingSimple'"
     />
@@ -15,6 +16,7 @@
     <Funny
       :loading-flag="selectedLoadingPage === 'Funny'"
     />
+    <!-- ここまでloading画面のコンポーネント群 -->
 
     <div class="title-section">
       <h2>
