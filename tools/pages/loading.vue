@@ -9,6 +9,12 @@
     <Coolest
       :loading-flag="selectedLoadingPage === 'Coolest'"
     />
+    <Colorful
+      :loading-flag="selectedLoadingPage === 'Colorful'"
+    />
+    <Funny
+      :loading-flag="selectedLoadingPage === 'Funny'"
+    />
 
     <div class="title-section">
       <h2>
@@ -50,6 +56,28 @@
           @onClickButton="openLoadingPage('Coolest')"
         />
       </div>
+
+      <div class="card">
+        <img src="~/assets/images/loading/loading-4.jpg" alt="LoadingSimple">
+        <h3 class="name">Colorful</h3>
+        <p class="description">This loading page is a loading screen characterized by circles and triangles</p>
+        <RectangleRoundCorner
+          text="open"
+          size="M"
+          @onClickButton="openLoadingPage('Colorful')"
+        />
+      </div>
+
+      <div class="card">
+        <img src="~/assets/images/loading/loading-5.jpg" alt="LoadingSimple">
+        <h3 class="name">Funny</h3>
+        <p class="description">This loading screen is a screen where a bear dances to encourage waiting.</p>
+        <RectangleRoundCorner
+          text="open"
+          size="M"
+          @onClickButton="openLoadingPage('Funny')"
+        />
+      </div>
     </div>
 
     <RectangleRoundCorner
@@ -67,6 +95,8 @@ import LoadingSimple from '~/components/Loading/Simple.vue'
 import DistortedQuadrilateral from '~/components/Loading/DistortedQuadrilateral.vue'
 import RectangleRoundCorner from '~/components/Presentational/Buttons/RectangleRoundCorner.vue'
 import Coolest from '~/components/Loading/Coolest.vue'
+import Colorful from '~/components/Loading/Colorful.vue'
+import Funny from '~/components/Loading/Funny.vue'
 
 export default {
   name: 'LoadingPage',
@@ -75,6 +105,8 @@ export default {
     DistortedQuadrilateral,
     RectangleRoundCorner,
     Coolest,
+    Colorful,
+    Funny,
   },
   data () {
     return {
@@ -136,16 +168,17 @@ export default {
     text-align: left;
     font-size: 1rem;
     font-weight: 200;
-    color: #8e8e8e;
+    color: #555555;
     margin-top: 5px;
   }
 
   .description {
     width: 240px;
-    min-height: 100px;
+    min-height: 80px;
     text-align: left;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     margin: 5px 0 10px;
+    color: #8e8e8e;
   }
 
   img {

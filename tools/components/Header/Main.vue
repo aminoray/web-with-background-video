@@ -26,7 +26,7 @@
   position: fixed;
   width: 100%;
   height: 60px;
-  background-color: rgba(0, 0, 0, 0.353);
+  background-color: #3556623a;
   z-index: 1000;
   display: flex;
   top: 0;
