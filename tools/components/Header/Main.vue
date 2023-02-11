@@ -9,10 +9,19 @@
           <NuxtLink to="/" class="link">HOME</NuxtLink>
         </li>
         <li>
+          <NuxtLink to="/portfolio" class="link">PORTFOLIO</NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/article" class="link">ARTICLES</NuxtLink>
+        </li>
+        <li>
           <NuxtLink to="/buttons" class="link">BUTTONS</NuxtLink>
         </li>
         <li>
           <NuxtLink to="/loading" class="link">LOADING</NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/tabSample" class="link">TAB</NuxtLink>
         </li>
       </ul>
     </div>
@@ -37,6 +46,7 @@
 .logo-section {
   margin-left: 20px;
   color: #fff;
+  cursor: pointer;
 }
 
 .navigation {
