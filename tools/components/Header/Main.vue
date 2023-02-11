@@ -12,7 +12,7 @@
           <NuxtLink to="/buttons" class="link">BUTTONS</NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/" class="link">hoge</NuxtLink>
+          <NuxtLink to="/loading" class="link">LOADING</NuxtLink>
         </li>
       </ul>
     </div>
@@ -29,6 +29,7 @@
   background-color: rgba(0, 0, 0, 0.353);
   z-index: 1000;
   display: flex;
+  top: 0;
   justify-content: space-between;
   align-items: center;
 }

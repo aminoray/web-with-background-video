@@ -1,23 +1,17 @@
 <template>
-  <button
-    class="button-body"
-  >
+  <button class="button-body" @click="$emit('onClickButton')">
     {{ text }}
   </button>
 </template>
 
 <script>
 export default {
-  name: 'Rectangle',
+  name: 'RectangleRoundCorner',
   props: {
     text: {
       type: String,
       default: ''
     },
-    size: {
-      type: String,
-      default: 'M'
-    }
   },
   data () {
     return {
@@ -29,6 +23,7 @@ export default {
 <style lang="scss" scoped>
 button {
   width: 120px;
+  border-radius: 6px;
   cursor: pointer;
   padding: 10px 20px;
   background-color: #8BC6EC;
