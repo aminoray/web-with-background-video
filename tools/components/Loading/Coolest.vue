@@ -1,15 +1,15 @@
 <template>
   <div class="container" :class="{ loaded : !loadingFlag }">
     <div class="icon">
-      <img src="~/assets/gif/loading.gif" alt="">
-      <h2>Loading...</h2>
+      <img src="~/assets/gif/cool-loading.gif" alt="Coolest">
+      <h2>Now Loading...</h2>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'LoadingSimple',
+  name: 'Coolest',
   components: {
   },
   props: {
@@ -32,7 +32,7 @@ export default {
   left: 0;
   width: 100vw;
   min-height: 100vh;
-  background-color: #fff;
+  background-color: #000;
   color: #666666;
   z-index: 9999;
   display: flex;
@@ -41,18 +41,21 @@ export default {
   transition: all 0.4s;
 
   .icon {
-    width: auto;
+    width: 340px;
     height: auto;
     text-align: center;
+    position: relative;
     img {
-      width: 64px;
+      width: 100%;
       height: auto;
     }
 
     h2 {
-      margin-top: 10px;
+      width: 100%;
+      position: absolute;
+      bottom: 60px;
       font-size: 1rem;
-      color: #ababab;
+      color: #03ff99;
     }
   }
 }

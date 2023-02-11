@@ -6,6 +6,9 @@
     <DistortedQuadrilateral
       :loading-flag="selectedLoadingPage === 'DistortedQuadrilateral'"
     />
+    <Coolest
+      :loading-flag="selectedLoadingPage === 'Coolest'"
+    />
 
     <div class="title-section">
       <h2>
@@ -36,6 +39,17 @@
           @onClickButton="openLoadingPage('DistortedQuadrilateral')"
         />
       </div>
+
+      <div class="card">
+        <img src="~/assets/images/loading/loading-3.jpg" alt="LoadingSimple">
+        <h3 class="name">Coolest</h3>
+        <p class="description">This loading page is a loading screen characterized by circles and triangles</p>
+        <RectangleRoundCorner
+          text="open"
+          size="M"
+          @onClickButton="openLoadingPage('Coolest')"
+        />
+      </div>
     </div>
 
     <RectangleRoundCorner
@@ -52,6 +66,7 @@
 import LoadingSimple from '~/components/Loading/Simple.vue'
 import DistortedQuadrilateral from '~/components/Loading/DistortedQuadrilateral.vue'
 import RectangleRoundCorner from '~/components/Presentational/Buttons/RectangleRoundCorner.vue'
+import Coolest from '~/components/Loading/Coolest.vue'
 
 export default {
   name: 'LoadingPage',
@@ -59,6 +74,7 @@ export default {
     LoadingSimple,
     DistortedQuadrilateral,
     RectangleRoundCorner,
+    Coolest,
   },
   data () {
     return {
@@ -121,7 +137,7 @@ export default {
     font-size: 1rem;
     font-weight: 200;
     color: #8e8e8e;
-    margin-top: 5px 0;
+    margin-top: 5px;
   }
 
   .description {
